@@ -2,8 +2,7 @@ const listContainer = document.querySelector('ul');
 let dragged;
 let currentListItem;
 
-export const dragAndDrop = (tasks) => {
-
+export default (tasks) => {
   listContainer.addEventListener(
     'dragstart',
     (event) => {
@@ -73,4 +72,4 @@ export const dragAndDrop = (tasks) => {
     },
     false,
   );
-}
+};

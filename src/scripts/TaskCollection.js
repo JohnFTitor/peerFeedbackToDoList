@@ -3,7 +3,7 @@ import Dots from './icons/dots.svg';
 import DeleteImg from './icons/delete.svg';
 import { setStatus } from './completed.js';
 
-//Define the parent of the tasks
+// Define the parent of the tasks
 const listContainer = document.querySelector('ul');
 
 export default class TaskCollection {
@@ -25,7 +25,7 @@ export default class TaskCollection {
   loadStorage() {
     const collection = JSON.parse(localStorage.getItem('collection'));
 
-    //Add each task based on the info retrieved by the localStorage  
+    // Add each task based on the info retrieved by the localStorage
     if (collection) {
       collection.forEach((task) => {
         this.addTask(task.description, task.completed);
@@ -38,13 +38,12 @@ export default class TaskCollection {
   removeTask(currentTask) {
     this.list.splice(currentTask.index - 1, 1);
 
-    //Get the div inside the card linked to the task
+    // Get the div inside the card linked to the task
     const element = listContainer.querySelector(`#card-${currentTask.index}`);
-    listContainer.removeChild(element.parentNode); 
+    listContainer.removeChild(element.parentNode);
     let index = 1;
     this.list.forEach((task) => {
-
-      //Updates all further indexes if necessary  
+      // Updates all further indexes if necessary
       if (task.index - index > 0) {
         const nextTask = listContainer.querySelector(`#card-${task.index}`);
         task.index -= 1;
