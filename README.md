@@ -1,29 +1,31 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Title
+# To Do List
 
-> Project headline description
+> In this project, I will build a simple HTML list of To Do tasks. This simple web page will be built using webpack and served by a webpack dev server
 
-![Preview](./preview.gif))
+![Preview](./preview.gif)
 
-Project Description
+A simple and minimalistic To Do List to keep track on tasks during the day.
 
 ## Built With
 
-Tecnologies used
+- HTML/SCSS
+- Webpack
+- Visual Studio Code Editor
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://johnftitor.github.io/toDoList/dist/index.html)
 
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone this repository with git clone```https://github.com/username/projectname.git``` using your terminal or command line.
+- Clone this repository with git clone```git@github.com:JohnFTitor/toDoList.git``` using your terminal or command line.
 - Change to the project directory by entering : <br>
-```cd projectname``` in the terminal
+```cd toDoList``` in the terminal
 
 ### Prerequisites
 
